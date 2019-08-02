@@ -25,5 +25,6 @@ steps:
     arguments: '--configuration Release' # Update this to match your need
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'JUnit'
+    testResultsFormat: 'VSTest'
     testResultsFiles: '**/TEST-*.xml'
+    mergeTestResults: true
